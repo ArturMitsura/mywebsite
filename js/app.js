@@ -4524,11 +4524,19 @@
                 return !/^\w+([\.-]?\w +)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
             }
         }));
-        const portfolioTitleAll = document.querySelector(".content-portfolio__navigation");
-        const portfolioTitle = document.querySelector(".content-portfolio__title");
+        const portfolioTitle1 = document.querySelectorAll("#color1")[0];
+        const portfolioTitle2 = document.querySelectorAll("#color2")[0];
+        const portfolioTitle3 = document.querySelectorAll("#color3")[0];
         const portfolioMore = document.querySelector(".portfolio__more");
-        portfolioTitleAll.addEventListener("mouseleave", (function(event) {
-            if (portfolioTitle.matches('[class$="_tab-active"]')) portfolioMore.style.color = "#fff"; else portfolioMore.style.color = "#1a1a1a";
+        console.log(portfolioTitle1);
+        portfolioTitle1.addEventListener("click", (function(event) {
+            portfolioMore.style.color = "#fff";
+        }));
+        portfolioTitle2.addEventListener("click", (function(event) {
+            portfolioMore.style.color = "#1a1a1a";
+        }));
+        portfolioTitle3.addEventListener("click", (function(event) {
+            portfolioMore.style.color = "#1a1a1a";
         }));
         window["FLS"] = true;
         isWebp();
