@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220729124927">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<div class="menu__logo">
+							<picture><source srcset="img/logo_am-black.webp" type="image/webp"><img class="menu__logo-black" src="img/logo_am-black.png" alt="logo"></picture>
+							<picture><source srcset="img/logo_am-white.webp" type="image/webp"><img class="menu__logo-white" src="img/logo_am-white.png" alt="logo"></picture>
+						</div>
+						<ul class="menu__list ">
+							<li class="menu__item"><a href="#" data-goto=".about__title" class="menu__link lng-menu-aboute">Обо
+									мне</a>
+							</li>
+							<li class="menu__item"><a href="#" data-goto-speed="1000" data-goto=".skills__container" class="menu__link lng-menu-skills">Навыки</a></li>
+							<li class="menu__item"><a href="#" data-goto-speed="1250" data-goto=".portfolio" class="menu__link lng-menu-portfolio">Портфолио</a></li>
+							<li class="menu__item"><a href="#" data-goto-speed="1500" data-goto=".contact__content" class="menu__link lng-menu-contacts">Контакты</a>
+							</li>
+							<li class="menu__item">
+								<div data-da=".header__container, 767.98" lass="menu__language">
+									<select class="menu__select">
+										<option value="ru"><span>RU</span></option>
+										<option value="en"><span>EN</span></option>
+										<option value="uk"><span>UK</span></option>
+									</select>
+								</div>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+				<div class="hello">
+					<div class="hello__container">
+						<div class="hello__row">
+							<div class="hello__content">
+								<div class="hello__content-group">
+									<div class="hello__hi lng-hello">Привет, меня зовут</div>
+									<div class="hello__name lng-name">Артур Мицура</div>
+									<div class="hello__profession">Front-end Developer</div>
+								</div>
+								<div class="hello__icons icons-hello">
+									<a href="mailto:arturmitsura@gmail.com" class="icons-hello__gmail icons-hello__icon _icon-gmail"></a>
+									<a target="_blank" href="https://github.com/ArturMitsura" class="icons-hello__git icons-hello__icon _icon-github"></a>
+									<a href="tel:+375333599669" class="icons-hello__phone icons-hello__icon _icon-phone"></a>
+								</div>
+							</div>
+							<div class="hello__avatar">
+								<picture><source srcset="img/I3.webp" type="image/webp"><img src="img/I3.png" alt="Artur Mitsura"></picture>
+							</div>
+							<div class="hello__black"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="way">
+				<div class="way__widthcontainer">
+					<div class="way__content">
+						<div class="way__title lng-way-title">It-ягоды ;)</div>
+						<div class="way__text">
+							<p class="lng-way-text">Данный сайт представлен в качестве примера части моих навыков в
+								<span>Front-end</span>
+								разработке. В своей работе я использую пре-процессор <span>SASS</span> совместно со сборщиком
+								<span>Gulp</span>, что
+								позволяет существенно улучшить <span>кроссплатформенность</span> и <span>оптимизацию</span>.
+								Реализован <span>динамический адаптив.</span>
+								На устройствах, ширина которых менее 768px, сделано <span>"бургер меню"</span>. Так же меню
+								сайта
+								сделано под
+								<span>прокрутку к нужному блоку</span> и <span>плавную навигацию</span>. В блоке портфолио
+								реализованы <span>табы</span> (при >768 px
+								превращающиеся в <span>спойлеры</span>), <span>попапы</span> (раздел "мои проекты"),
+								<span>слайдер
+									"swiper"</span>(раздел "обучение").
+							</p>
+							<p class="text-hidden lng-way-hidden">При прокрутке страницы к блоку
+								"Портфолио" работает
+								"<span>ленивая подгрузка</span>". В
+								блоке "Контакты", при отправке формы на сервер, предусмотрена <span>валидация</span> на проверку
+								заполнения
+								обязательного заполнения форм, и проверка ввода корректных символов в поле адреса электронной
+								почты. Присутствуют <span>анимации</span> и тому-подобные <span>приятности для глаз</span>...
+								Сохраняйте контакты, буду рад
+								вашему сотрудничеству.</p>
+						</div>
+
+						<button class="way__button button"><span class="lng-way-more">Больше...</span><span class="lng-way-hide">Скрыть</span></button>
+
+					</div>
+					<div class="way__image">
+						<img src="img/Logo ITB.png" alt="IT">
+					</div>
+
+				</div>
+			</div>
+			<div class="about">
+				<div class="about__container">
+					<div class="about__row">
+						<div class="about__title title"><span class="lng-about-title">Обо мне</span></div>
+						<div class="about__text text lng-about-text">В кратце, родился 20 января 1992г. Белорус, проживаю в г.
+							Гомеле. Имею
+							высшее образование в сфере "Промышленного и Гражданского строительства". Программированием стал
+							интересоваться с 2020г. Изучать начал с курсов <a target="_blank" href="https://www.sololearn.com/profile/10646960" style="font-weight: bold; text-decoration: underline;">SOLOLEARN</a>, где ознакомился с базовой
+							теорией
+							C++, C# ,Java, PHP, Javascript, CSS, HTML, Python и т.д. Электронные сертификаты представлены в
+							разделе
+							портфолио - обучение &#128521; В итоге я углубился в Front-end разработку. Данный сайт является
+							примером моих способностей. <p>По характеру я - адекватный. Вредные привычки выкурены и пропиты.
+								Презираю автократию и тоталиторизм, уважаю демократические ценности. Остальное листай ниже
+								&#128071;</p>
+						</div>
+						<div class="about__btn">
+							<a data-goto-speed="1000" data-goto=".portfolio__top" href="#">
+								<div class="about__button button-black lng-about-more">Больше...</div>
+							</a>
+
+						</div>
+						<div class="about__line">
+							<picture><source srcset="img/line-black.webp" type="image/webp"><img src="img/line-black.png" alt="--\\//--"></picture>
+						</div>
+						<div class="about__ability ability-aboute">
+							<div class="ability-aboute__support">
+								<div class="ability-aboute__title-support lng-ability-title-tex">Тех-поддержка</div>
+								<div class="ability-aboute__text lng-ability-text-tex">Могу поддерживать front-end вашего сайта.
+									Изменить содержание,
+									контактные данные, товары, стилистику и т.д. При необходимости выполню либо улучшу
+									адаптивность, кросплатформенность и оптимизацию вавашего сайта.
+								</div>
+							</div>
+							<div class="ability-aboute__development">
+								<div class="ability-aboute__title-development lng-ability-title-dev">Разработка</div>
+								<div class="ability-aboute__text lng-ability-text-dev">Могу разработать front-end сайта по
+									макету дизайнера. В
+									процессе разработки учту ваши предложения и пожелания. При необходимости проконсультирую о
+									возможных нюансах и улучшении usability сайта.
+								</div>
+							</div>
+						</div>
+						<div class="about__line about__line-second">
+							<picture><source srcset="img/line-black.webp" type="image/webp"><img src="img/line-black.png" alt="--\\//--"></picture>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="skills">
+				<div class="skills__container">
+					<div class="skills__title title"><span class="lng-skills-title">Навыки</span></div>
+					<div class="skills__usingnow lng-skills-now">Использую сейчас:</div>
+					<div class="skills__icons icons-skill">
+						<div class="icons-skill__row">
+							<div class="icons-skill__column">
+								<div class="icons-skill__icon">
+									<img src="img/icons/HTML5.svg" alt="HTML5">
+								</div>
+								<div class="icons-skill__name name-icon">HTML5</div>
+							</div>
+							<div class="icons-skill__column">
+								<div class="icons-skill__icon">
+									<img src="img/icons/CSS3.svg" alt="CSS3">
+								</div>
+								<div class="icons-skill__name name-icon">CSS3</div>
+							</div>
+							<div class="icons-skill__column">
+								<div class="icons-skill__icon">
+									<img src="img/icons/SASS.svg" alt="SASS">
+								</div>
+								<div class="icons-skill__name name-icon">SASS</div>
+							</div>
+							<div class="icons-skill__column">
+								<div class="icons-skill__icon">
+									<img src="img/icons/JS.svg" alt="JS">
+								</div>
+								<div class="icons-skill__name name-icon">Javascript</div>
+							</div>
+							<div class="icons-skill__column">
+								<div class="icons-skill__icon">
+									<img src="img/icons/GIT.svg" alt="GIT">
+								</div>
+								<div class="icons-skill__name name-icon">GIT</div>
+							</div>
+							<div class="icons-skill__column">
+								<div class="icons-skill__icon">
+									<img src="img/icons/gulp.svg" height="100px" alt="gulp">
+								</div>
+								<div class="icons-skill__name name-icon">gulp</div>
+							</div>
+							<div class="icons-skill__column">
+								<div class="icons-skill__icon">
+									<img src="img/icons/figma.svg" alt="figma">
+								</div>
+								<div class="icons-skill__name name-icon">figma</div>
+							</div>
+							<div class="icons-skill__column">
+								<div class="icons-skill__icon">
+									<picture><source srcset="img/icons/wordpress.webp" type="image/webp"><img src="img/icons/wordpress.png" height="100px" alt="wordpress"></picture>
+								</div>
+								<div class="icons-skill__name name-icon">wordpress</div>
+							</div>
+						</div>
+					</div>
+					<div class="skills__usingnow lng-skills-learn">Изучаю:</div>
+					<div class="skills__icons icons-skill">
+						<div class="icons-skill__row">
+							<div class="icons-skill__column">
+								<div class="icons-skill__icon">
+									<img src="img/icons/MySQL.svg" alt="MySQL">
+								</div>
+								<div class="icons-skill__name name-icon">MySQL</div>
+							</div>
+							<div class="icons-skill__column">
+								<div class="icons-skill__icon">
+									<img src="img/icons/JS.svg" alt="javascript">
+								</div>
+								<div class="icons-skill__name name-icon">javascript</div>
+							</div>
+							<div class="icons-skill__column">
+								<div class="icons-skill__icon">
+									<img src="img/icons/Python.svg" height="100px" alt="Python">
+								</div>
+								<div class="icons-skill__name name-icon">Python</div>
+							</div>
+							<div class="icons-skill__column">
+								<div class="icons-skill__icon">
+									<img src="img/icons/jQuery.svg" height="100px" alt="jQuery">
+								</div>
+								<div class="icons-skill__name name-icon">jQuery</div>
+							</div>
+
+						</div>
+						<div class="skills__usingnow lng-skills-other">Другие навыки:</div>
+						<div class="skills__icons icons-skill">
+							<div class="icons-skill__row">
+								<div class="icons-skill__column">
+									<div class="icons-skill__icon">
+										<img src="img/icons/Englisch.svg" alt="HEnglisch">
+									</div>
+									<div class="icons-skill__name name-icon">Englisch B1/B2</div>
+								</div>
+								<div class="icons-skill__column">
+									<div class="icons-skill__icon">
+										<img src="img/icons/photoshop.svg" height="100px" alt="photoshop">
+									</div>
+									<div class="icons-skill__name name-icon">photoshop</div>
+								</div>
+								<div class="icons-skill__column">
+									<div class="icons-skill__icon">
+										<picture><source srcset="img/icons/MQL4.webp" type="image/webp"><img src="img/icons/MQL4.png" alt="MQL4"></picture>
+									</div>
+									<div class="icons-skill__name name-icon">MQL4</div>
+								</div>
+								<div class="icons-skill__column">
+									<div class="icons-skill__icon">
+										<img src="img/icons/Python.svg" height="100px" alt="Python">
+									</div>
+									<div class="icons-skill__name name-icon">Python</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio">
+				<div class="portfolio__top">
+					<div class="portfolio__align">
+						<div class="portfolio__title"><span class="lng-portfolio-title">Портфолио</span></div>
+					</div>
+				</div>
+				<div class="portfolio__content">
+					<div data-tabs="767" data-tabs-animate="1000" class="content-portfolio">
+						<nav data-tabs-titles class="content-portfolio__navigation">
+							<button type="button" class="content-portfolio__title _tab-active lng-portfolio-project"><span id="color1">Мои
+									проекты</span></button>
+							<button type="button" class="content-portfolio__title lng-portfolio-study"><span id="color2">Обучение</span></button>
+							<button type="button" class="content-portfolio__title lng-portfolio-hobby"><span id="color3">Хобби</span></button>
+						</nav>
+						<div data-tabs-body class="content-portfolio__content">
+							<div class="content-portfolio__body body-portfolio">
+								<div class="body-portfolio__items">
+									<div class="body-portfolio__item">
+										<div class="body-portfolio__project -ibg"><a target="_blank" href="https://arturmitsura.github.io/AsterNews/" class="link"><picture><source data-srcset="img/project/Aster.webp" type="image/webp"><img data-src="img/project/Aster.jpg" alt="Aster"></picture></a>
+										</div>
+									</div>
+									<div class="body-portfolio__item">
+										<div class="body-portfolio__project -ibg"><a target="_blank" href="https://arturmitsura.github.io/TVimo/" class="link"><picture><source data-srcset="img/project/TVimo.webp" type="image/webp"><img data-src="img/project/TVimo.png" alt="TVimo"></picture></a>
+										</div>
+									</div>
+									<div class="body-portfolio__item">
+										<div class="body-portfolio__project -ibg"><a target="_blank" href="https://arturmitsura.github.io/Travel/" class="link"><picture><source data-srcset="img/project/travel.webp" type="image/webp"><img data-src="img/project/travel.png" alt="Travel"></picture></a>
+										</div>
+									</div>
+									<div hidden class="body-portfolio__item">
+										<div class="body-portfolio__project -ibg"><a target="_blank" href="https://arturmitsura.github.io/Resume/" class="link"><picture><source data-srcset="img/project/resume-min.webp" type="image/webp"><img data-src="img/project/resume-min.png" alt="resume"></picture></a>
+										</div>
+									</div>
+									<div hidden class="body-portfolio__item">
+										<div class="body-portfolio__project -ibg"><a target="_blank" href="https://arturmitsura.github.io/Velo_adaptive/" class="link"><picture><source data-srcset="img/project/velo-min.webp" type="image/webp"><img data-src="img/project/velo-min.png" alt="velo"></picture></a>
+										</div>
+									</div>
+									<div hidden class="body-portfolio__item">
+										<div class="body-portfolio__project -ibg"><a href="#" data-popup="#popup" class="link"><picture><source data-srcset="img/project/myshop-min.webp" type="image/webp"><img data-src="img/project/myshop-min.png" alt="shop"></picture></a>
+										</div>
+									</div>
+									<div hidden class="body-portfolio__item">
+										<div class="body-portfolio__project -ibg">
+											<picture><source data-srcset="img/project/I.webp" type="image/webp"><img data-src="img/project/I.jpg" alt="I"></picture>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="content-portfolio__body body-portfolio portfolio__slider swiper">
+								<div class="body-portfolio__items-sl portfolio__wrapper swiper-wrapper">
+									<div class="body-portfolio__sl portfolio__slide swiper-slide">
+										<div class="body-portfolio__sertificate -ibg">
+											<picture><source data-srcset="img/Sertificate/CSS_certificate.webp" type="image/webp"><img data-src="img/Sertificate/CSS_certificate.jpg" alt="css"></picture>
+										</div>
+									</div>
+
+									<div class="body-portfolio__sl portfolio__slide swiper-slide">
+										<div class="body-portfolio__sertificate -ibg">
+											<picture><source data-srcset="img/Sertificate/CSharp_certificate.webp" type="image/webp"><img data-src="img/Sertificate/CSharp_certificate.jpg" alt="C#"></picture>
+										</div>
+									</div>
+
+									<div class="body-portfolio__sl portfolio__slide swiper-slide">
+										<div class="body-portfolio__sertificate -ibg">
+											<picture><source data-srcset="img/Sertificate/HTML_certificate.webp" type="image/webp"><img data-src="img/Sertificate/HTML_certificate.jpg" alt="HTML"></picture>
+										</div>
+									</div>
+
+									<div class="body-portfolio__sl portfolio__slide swiper-slide ">
+										<div class="body-portfolio__sertificate -ibg">
+											<picture><source data-srcset="img/Sertificate/Intermediate_Python_certificate.webp" type="image/webp"><img data-src="img/Sertificate/Intermediate_Python_certificate.jpg" alt="Intermediate Python"></picture>
+										</div>
+									</div>
+
+									<div class="body-portfolio__sl portfolio__slide swiper-slide">
+										<div class="body-portfolio__sertificate -ibg">
+											<picture><source data-srcset="img/Sertificate/JavaScript_certificate.webp" type="image/webp"><img data-src="img/Sertificate/JavaScript_certificate.jpg" alt="JavaScript"></picture>
+										</div>
+									</div>
+
+									<div class="body-portfolio__sl portfolio__slide swiper-slide">
+										<div class="body-portfolio__sertificate -ibg">
+											<picture><source data-srcset="img/Sertificate/Java_certificate.webp" type="image/webp"><img data-src="img/Sertificate/Java_certificate.jpg" alt="Java"></picture>
+										</div>
+									</div>
+
+									<div class="body-portfolio__sl portfolio__slide swiper-slide">
+										<div class="body-portfolio__sertificate -ibg">
+											<picture><source data-srcset="img/Sertificate/PHP_certificate.webp" type="image/webp"><img data-src="img/Sertificate/PHP_certificate.jpg" alt="PHP"></picture>
+										</div>
+									</div>
+
+									<div class="body-portfolio__sl portfolio__slide swiper-slide">
+										<div class="body-portfolio__sertificate -ibg">
+											<picture><source data-srcset="img/Sertificate/Python-for-Beginners_certificate.webp" type="image/webp"><img data-src="img/Sertificate/Python-for-Beginners_certificate.jpg" alt="Python for Beginners"></picture>
+										</div>
+									</div>
+
+									<div class="body-portfolio__sl portfolio__slide swiper-slide">
+										<div class="body-portfolio__sertificate -ibg">
+											<picture><source data-srcset="img/Sertificate/Python_certificate.webp" type="image/webp"><img data-src="img/Sertificate/Python_certificate.jpg" alt="Python"></picture>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="content-portfolio__body body-portfolio">
+								<div class="body-portfolio__items">
+									<div class="body-portfolio__it-hobby">
+										<div class="body-portfolio__hobby">
+											<iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" data-src="https://www.instagram.com/p/CPGaGeWNNDU/embed/captioned/?cr=1&amp;v=14&amp;rd=http%3A%2F%2F192.168.0.102%3A8080&amp;rp=%2Fhome.html#%7B%22ci%22%3A0%2C%22os%22%3A299%2C%22ls%22%3A18.799999997019768%2C%22le%22%3A273.20000000298023%7D" allowtransparency="true" allowfullscreen="true" frameborder="0" height="653" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="background: white; max-width: 540px; width: calc(100% - 2px); border-radius: 30px 0px 30px 0px; border: 5px solid rgb(255 255 255); box-shadow: none; display: block; margin: 10px auto; min-width: 326px; padding: 0px 10px;"></iframe>
+										</div>
+										<div class="body-portfolio__hobby">
+											<div class="body-portfolio__hobby-cntr">
+												<iframe width="560" height="315" data-src="https://www.youtube.com/embed/YyvIV0iSqFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											</div>
+										</div>
+										<div class="body-portfolio__hobby">
+											<iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" data-src="https://www.instagram.com/p/CTSXhEqt1ex/embed/?cr=1&amp;v=14&amp;rd=http%3A%2F%2F192.168.0.102%3A8080&amp;rp=%2Fhome.html#%7B%22ci%22%3A0%2C%22os%22%3A3404.4000000059605%2C%22ls%22%3A3083.2000000029802%2C%22le%22%3A3388%7D" allowtransparency="true" allowfullscreen="true" frameborder="0" height="610" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="background: white; max-width: 540px; width: calc(100% - 2px); border-radius:0px 30px 0px 30px; border: 5px solid rgb(255, 255, 255); box-shadow: none; display: block; margin: 10px auto; min-width: 326px; padding: 0px 10px;"></iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio__bottom">
+					<button class="portfolio__more">
+						<span class="lng-portfolio-more">Показать больше...</span>
+						<span class="lng-portfolio-hidden">Скрыть</span>
+					</button>
+				</div>
+			</div>
+			<div class="contact">
+				<div class="contact__content">
+					<div class="contact__title title"><span class="lng-contacts-title">Контакты</span></div>
+					<div class="contact__text lng-contacts-info">Форма отправки контактных данных на электронную почту готова
+						и ожидает
+						загрузку сайта на сервер. Учитывая крайне редкую проверку мной электронной почты, необходимости в этом
+						для меня нет. На данный момент меня устраивает сервис GitHub.
+					</div>
+					<div class="contact__line contact__line-second">
+						<picture><source srcset="img/line-black.webp" type="image/webp"><img src="img/line-black.png" alt="--\\//--"></picture>
+					</div>
+				</div>
+				<div class="contact__form">
+					<form action="#" id="form" class="form__body">
+						<div class="form__item">
+							<input type="text" name="name" placeholder="Ваше имя*" class="form__input _req">
+						</div>
+						<div class="form__item">
+							<input type="text" name="email" placeholder="Ваш email*" class="form__input _req _email">
+						</div>
+						<div class="form__item">
+							<input type="number" name="phonenumber" placeholder="Ваш телефон" class="form__input">
+						</div>
+						<div class="form__item"><textarea name="message" placeholder="Ваше сообщение*" class="form__input _req"></textarea>
+						</div>
+						<button type="submit" class="form__button button-black lng-contacts-button">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<a class="footer__link href=" #" data-goto-speed="1500" data-goto=".header">
+					<div class="footer__dooble-arrow"><img src="img/double-arrow.svg" alt="double-arrow"></div>
+				</a>
+				<div class="footer__text-arrow lng-footer-arrow">Вернуться вверх</div>
+				<div class="footer__icons">
+					<div class="footer__icon"><a target="_blank" href="https://vk.com/life5391217"><picture><source srcset="img/social/VK.webp" type="image/webp"><img src="img/social/VK.png" alt="VK"></picture></a></div>
+					<div class="footer__icon insta"><a target="_blank" href="https://www.instagram.com/arturmitsura"><picture><source srcset="img/social/insta.webp" type="image/webp"><img src="img/social/insta.png" alt="insta"></picture></a></div>
+					<div class="footer__icon"><a href="tel:+375333599669"><picture><source srcset="img/social/phone.webp" type="image/webp"><img src="img/social/phone.png" alt="phone"></picture></a></div>
+				</div>
+				<div class="footer__allrights lng-footer-right">@2022 Артур Мицура Все Права Защищены.</div>
+			</div>
+		</footer>
+	</div>
+	<!-------------------------------------------------------->
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">X</button>
+				<div class="popup__text">
+					<picture><source data-srcset="img/project/myshop.webp" type="image/webp"><img data-src="img/project/myshop.png" width="100%" alt="shop"></picture>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220729124927"></script>
+</body>
+
+</html>
