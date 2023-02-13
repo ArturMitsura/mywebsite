@@ -1339,8 +1339,10 @@ body::after {
   }
 }
 
+.no-webp .portfolio__top{
+  background-image: url(../img/сosmos.jpg); }
+
 .portfolio__top {
-  background-image: url(../img/сosmos.jpg);
   background-position-y: 100%;
   height: 320px;
   max-width: 1920px;
@@ -3203,3 +3205,5 @@ button.swiper-pagination-bullet {
     width: 6px;
   }
 }
+
+.webp .portfolio__top{ background-image: url(../img/сosmos.webp); }
